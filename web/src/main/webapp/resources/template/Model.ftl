@@ -14,13 +14,21 @@ public class ${className} {
 	private String id;
 
 <#list fieldList as field>
-
-	@Column(name="${field.name}")
+	@Column(name = "${field.name}")
 	private ${field.type} ${field.name};
 
 </#list>
+	@Column(name = "createUserId")
+    private String createUserId;
 
-	public ${className} {}
+    @Column(name = "createTime")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createTime;
+
+    @Column(name = "remove")
+    private String remove;
+
+	public ${className}() {}
 
 	public String getId() {
 		return id;
@@ -29,7 +37,6 @@ public class ${className} {
 	public void setId(String id) {
 		this.id = id;
 	}
-
 <#list fieldList as field>
 
 	public ${field.type} get${field.name?cap_first}() {
@@ -39,7 +46,29 @@ public class ${className} {
 	public void set${field.name?cap_first}(${field.type} ${field.name}) {
 		this.${field.name} = ${field.name};
 	}
-
 </#list>
 
+    public String getCreateUserId() {
+        return createUserId;
+    }
+
+    public void setCreateUserId(String createUserId) {
+        this.createUserId = createUserId;
+    }
+
+ 	public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+	public String getRemove() {
+        return remove;
+    }
+
+    public void setRemove(String remove) {
+        this.remove = remove;
+    }
 }
