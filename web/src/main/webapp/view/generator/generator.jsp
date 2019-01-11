@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="${ctx}/libs/assets/vendor/metisMenu/metisMenu.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="${ctx}/libs/assets/css/main.css">
-    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <!-- 自定义样式 用于覆盖模板中的默认样式 -->
     <link rel="stylesheet" href="${ctx}/libs/assets/css/demo.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
@@ -315,12 +315,14 @@
                             </div>
                         </div>
                         <div class="form-group btnGroup">
-                            <button type="button" class="btn btn-sm" onclick="addDom()">
-                                <i class="fa fa-plus-square"></i><span>增加字段</span>
-                            </button>
-                            <button type="button" class="btn btn-sm btn-info" onclick="submit()">
-                                <i class="fa fa-check-square"></i><span>提交</span>
-                            </button>
+                            <div class="col-sm-8">
+                                <button type="button" class="btn btn-sm btn-info" onclick="submit()">
+                                    <i class="fa fa-check-square"></i><span>生成代码</span>
+                                </button>
+                                <button type="button" class="btn btn-sm" onclick="addDom()">
+                                    <i class="fa fa-plus-square"></i><span>增加字段</span>
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
