@@ -15,8 +15,12 @@
 <body>
 <!-- 主体内容 -->
 <div>
-    <form action="${ctx}/core/add.do">
+    <form action="${ctx}/core/generate.do">
         <table>
+            <tr>
+                <td>包名：</td>
+                <td><input type="text" name="packageName"></td>
+            </tr>
             <tr>
                 <td>实体类名：</td>
                 <td><input type="text" name="className"/></td>
