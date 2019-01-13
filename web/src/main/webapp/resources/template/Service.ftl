@@ -1,4 +1,5 @@
-
+package ${packageName}.service;
+import ${packageName}.model.${className};
 import java.util.List;
 import java.util.Map;
 

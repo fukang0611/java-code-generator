@@ -1,3 +1,6 @@
+package ${packageName}.dao.impl;
+import ${packageName}.model.${className};
+import ${packageName}.dao.${className}Dao;
 import org.springframework.stereotype.Repository;
 import org.hibernate.Query;
 import org.hibernate.SessionFactory;

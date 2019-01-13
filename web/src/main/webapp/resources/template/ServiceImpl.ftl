@@ -1,4 +1,7 @@
-
+package ${packageName}.service.impl;
+import ${packageName}.model.${className};
+import ${packageName}.service.${className}Service;
+import ${packageName}.dao.${className}Dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

@@ -1,3 +1,6 @@
+package ${packageName}.controller;
+import ${packageName}.model.${className};
+import ${packageName}.service.${className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -54,8 +57,6 @@ public Map data(${className} record, HttpServletRequest request){
         model.addAttribute("${className?uncap_first}", record);
         return "";
     }
-
-
 
     @RequestMapping("/deleteSucc")
     @ResponseBody

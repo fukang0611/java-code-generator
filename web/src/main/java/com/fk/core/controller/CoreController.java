@@ -51,6 +51,7 @@ public class CoreController {
 
         // 封装模板数据
         Map data = new HashMap();
+        data.put("packageName", packageName);
         data.put("className", className);
         data.put("tableName", tableName);
         List<Map> fieldList = new ArrayList<>();
